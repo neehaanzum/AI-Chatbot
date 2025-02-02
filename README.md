@@ -1,96 +1,111 @@
-# AI-Chatbot
-# Healthcare Chatbot
+# 🏥 Healthcare Assistant Chatbot  
 
-## Overview
-This project involves developing an AI-powered Healthcare Chatbot that assists users in preliminary health consultations, symptom analysis, and medical guidance. The primary objective is to provide accessible and immediate healthcare support using Natural Language Processing (NLP) and deep learning techniques.
+### AI-Powered Medical Consultation  
 
-## Table of Contents
-- Project Description
-- Dataset
-- Model Architecture
-- Training
-- Weekly Progress
-- Technologies Used
-- Future Scope
-- Contributing
+![Healthcare Chatbot Banner](assets/healthcare_chatbot_banner.png)  
 
-## Project Description
-Access to timely medical advice is crucial, especially in remote or underserved areas. This AI-powered Healthcare Chatbot aims to bridge the gap by offering preliminary health assessments, symptom checking, and medical recommendations. Using NLP, the chatbot interacts with users in a conversational manner, providing guidance based on trained models and medical databases.
+---
 
-## Dataset
-The dataset used for this project consists of structured and unstructured medical records, symptom-disease mappings, and conversational medical dialogues. The data sources include:
+## Table of Contents  
+- [ Introduction](#-introduction)  
+- [ Features](#-features)  
+- [ Installation Guide](#-installation-guide)  
+- [ How to Use](#-how-to-use)  
+- [ Technology Stack](#-technology-stack)  
+- [ AI & NLP Model](#-ai--nlp-model)  
+- [ Future Enhancements](#-future-enhancements)  
+- [ Contributing](#-contributing)  
+- [ License](#-license)  
 
-### Key Details:
-- **Total Records:** 50,000+ medical cases
-- **Training Data:** 85% of the dataset
-- **Test Data:** 15% of the dataset
-- **Classes:** Common diseases and symptoms
-- **Purpose:** To enable AI-driven medical consultations and preliminary diagnosis.
+---
 
-### Approach:
-- Reviewed medical literature and healthcare chatbots.
-- Analyzed symptom patterns and mapped them to probable diseases.
-- Utilized NLP techniques to understand and process user queries.
-- Integrated APIs for real-time medical data retrieval and validation.
+##  Introduction  
+The **Healthcare Assistant Chatbot** is an AI-driven chatbot that provides basic medical assistance by responding to user queries about symptoms, appointments, and medications. It uses **Natural Language Processing (NLP)** and **Deep Learning** to generate responses, ensuring an interactive and informative experience.  
 
-**Dataset Link:**
-You can access the dataset here: [Healthcare Chatbot Dataset](#).
+ Built with **Streamlit** for an intuitive user interface and powered by **Transformers (DistilGPT-2)** for AI-based responses.  
 
-**Note:** Ensure appropriate dataset licensing and compliance with healthcare data privacy regulations.
+---
 
-## Model Architecture
-The chatbot uses a hybrid architecture combining NLP and deep learning:
+##  Features  
+ **Symptom Guidance** - Offers preliminary advice for symptoms.  
+ **Appointment Scheduling** - Assists in setting up doctor consultations.  
+ **Medication Reminders** - Provides general medication adherence advice.  
+ **AI-Generated Conversations** - Uses GPT-based text generation for responses.  
+ **User-Friendly Interface** - Built with Streamlit for ease of use.  
 
-- **NLP Pipeline:**
-  - Tokenization
-  - Named Entity Recognition (NER)
-  - Intent Classification
-  - Response Generation
+---
 
-- **Deep Learning Model:**
-  - LSTM-based RNN for sequential data processing
-  - Attention Mechanism for contextual understanding
-  - Pretrained Transformers (e.g., BERT, GPT) for enhanced comprehension
+##  Installation Guide  
 
-## Training
-- **Optimizer:** Adam
-- **Loss Function:** Categorical Crossentropy
-- **Epochs:** Configurable (default: 25)
-- **Batch Size:** Configurable (default: 32)
-- **Data Augmentation:** Used for enhancing model performance
+### Clone the Repository  
+```sh
+git clone https://github.com/your-username/healthcare-chatbot.git
+cd healthcare-chatbot
+```
 
-## Weekly Progress
-This section will be updated weekly with progress details and corresponding Jupyter Notebooks.
+### Set Up Virtual Environment  
+```sh
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+```
 
-### Week 1: Libraries, Data Import, and Setup
-**Date:** 20th January 2025 - 27th January 2025  
-**Activities:**
-- Imported the necessary libraries and frameworks.
-- Set up the project environment.
-- Explored the dataset structure.
+### Install Dependencies  
+```sh
+pip install -r requirements.txt
+```
 
-### Week 2: TBD
-Details to be added after completion.
+### Run the Chatbot  
+```sh
+streamlit run app.py
+```
+ Open **http://localhost:8501/** in your browser to use the chatbot.  
 
-### Week 3: TBD
-Details to be added after completion.
+---
 
-## Technologies Used
-- Python
-- TensorFlow/Keras
-- Natural Language Processing (spaCy, NLTK, Transformers)
-- OpenAI GPT/BERT Models
-- Flask/Django for API integration
-- Pandas & NumPy for data handling
-- Matplotlib & Seaborn for visualization
+## How to Use  
+   Open the chatbot interface.  
+   Enter a query (e.g., "I have a headache and fever").  
+   The chatbot will provide guidance based on the input.  
+   If relevant, it will suggest consulting a doctor or scheduling an appointment.  
 
-## Future Scope
-- Expanding the chatbot’s capabilities to support multiple languages.
-- Enhancing chatbot responses using Reinforcement Learning.
-- Integrating the chatbot with wearable health monitoring devices.
-- Deploying as a web and mobile application for real-time assistance.
+---
 
-## Contributing
+## Technology Stack  
+  **Language:** Python  
+  **AI Model:** DistilGPT-2 (Transformers)  
+  **NLP Libraries:** NLTK (Tokenization, Stopwords)  
+  **Framework:** Streamlit (UI)  
+  **Dependency Management:** Pip  
+
+---
+
+## AI & NLP Model  
+ The chatbot utilizes:  
+ - **Hugging Face’s Transformers** (`distilgpt2`) for AI-based text generation.  
+ - **NLTK** for processing user input (tokenization & stopword removal).  
+ - **Rule-Based Logic** for handling symptom-related queries.  
+
+### Chatbot Behavior  
+ If a user mentions **symptoms**, it suggests consulting a doctor.  
+ If a user asks about **appointments**, it provides scheduling guidance.  
+ If a user inquires about **medications**, it reminds them to consult their doctor.  
+ Otherwise, it uses AI text generation for a conversational response.  
+
+---
+
+## Future Enhancements  
+ **Multi-language Support** - Expand chatbot capabilities for global users.  
+ **Integration with EHR Systems** - Connect to electronic health records.  
+ **Personalized Health Insights** - Use AI to track patient history.  
+ **Mobile App Deployment** - Bring the chatbot to iOS & Android.  
+
+---
+
+## Contributing  
 Contributions are welcome! Feel free to submit an issue or pull request if you'd like to contribute.
+
+---
+
+
 
 
