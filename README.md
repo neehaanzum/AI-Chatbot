@@ -2,6 +2,8 @@
 
 ### AI-Powered Medical Consultation  
 
+check here https://ai-chatbot-ms89xuazlmj9jqwykxstrh.streamlit.app/
+
 ![Healthcare Chatbot Banner](assets/healthcare_chatbot_banner.png)  
 
 ---
